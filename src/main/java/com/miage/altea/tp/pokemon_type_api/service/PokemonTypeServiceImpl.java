@@ -5,6 +5,7 @@ import com.miage.altea.tp.pokemon_type_api.repository.PokemonTypeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -25,6 +26,12 @@ public class PokemonTypeServiceImpl implements PokemonTypeService{
     @Override
     public PokemonType getPokemonTypeByName(String name) {
         return pokemonTypeRepository.findPokemonTypeByName(name);
+    }
+
+    @Override
+    public List<PokemonType> getPokemonTypeByType(String type) {
+        List<String> types = Arrays.asList(type.split(","));
+        return pokemonTypeRepository.findPokemonTypeByTypes(types);
     }
 
     @Override
