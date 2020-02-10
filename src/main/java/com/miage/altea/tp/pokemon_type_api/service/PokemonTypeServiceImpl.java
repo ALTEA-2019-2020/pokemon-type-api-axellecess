@@ -56,7 +56,12 @@ public class PokemonTypeServiceImpl implements PokemonTypeService{
 
         // Name translation
         for(PokemonType pokemonType : pokemonTypeList){
-            pokemonType.setName(translationRepository.getPokemonName(pokemonType.getId(), LocaleContextHolder.getLocale()));
+            if(LocaleContextHolder.getLocale() != Locale.ENGLISH && LocaleContextHolder.getLocale() != Locale.FRENCH){
+                pokemonType.setName(translationRepository.getPokemonName(pokemonType.getId(), Locale.ENGLISH));
+            }
+            else {
+                pokemonType.setName(translationRepository.getPokemonName(pokemonType.getId(), LocaleContextHolder.getLocale()));
+            }
         }
         return pokemonTypeList;
     }
