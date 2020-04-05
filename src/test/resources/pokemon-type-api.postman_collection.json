@@ -1,10 +1,8 @@
 {
-	"variables": [],
 	"info": {
+		"_postman_id": "553d9988-9e4b-4889-9cac-74deda2fc8bc",
 		"name": "pokemon-type-api",
-		"_postman_id": "02d42318-a110-3027-3ebb-069a51f26b89",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -13,23 +11,34 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "7cba85d9-bd22-4d19-b135-8b9ffcc554bb",
 						"exec": [
 							"pm.test(\"Bulbasaur\", function () {",
 							"    var bulbasaur = pm.response.json();",
 							"    pm.expect(bulbasaur.id).to.eq(1);",
 							"    pm.expect(bulbasaur.name).to.eq(\"Bulbasaur\");",
 							"});"
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
 			"request": {
-				"url": "http://localhost:8080/pokemon-types/1",
 				"method": "GET",
 				"header": [],
-				"body": {},
-				"description": ""
+				"url": {
+					"raw": "https://pokemon-type-api-cess.herokuapp.com/pokemon-types/1",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-cess",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -39,29 +48,39 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "cc97cf21-3516-4381-9b91-3075dc1b3d78",
 						"exec": [
 							"pm.test(\"Bulbasaur\", function () {",
 							"    var bulbasaur = pm.response.json();",
 							"    pm.expect(bulbasaur.id).to.eq(1);",
 							"    pm.expect(bulbasaur.name).to.eq(\"Bulbizarre\");",
 							"});"
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
 			"request": {
-				"url": "http://localhost:8080/pokemon-types/1",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Accept-Language",
-						"value": "fr",
-						"description": ""
+						"value": "fr"
 					}
 				],
-				"body": {},
-				"description": ""
+				"url": {
+					"raw": "https://pokemon-type-api-cess.herokuapp.com/pokemon-types/1",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-cess",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -71,7 +90,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "3629047c-df37-4ea9-8095-7f05258b8a2a",
 						"exec": [
 							"pm.test(\"all pokemon types\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -87,16 +106,27 @@
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData[1].name).to.eq(\"Ivysaur\");",
 							"});"
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
 			"request": {
-				"url": "http://localhost:8080/pokemon-types/",
 				"method": "GET",
 				"header": [],
-				"body": {},
-				"description": ""
+				"url": {
+					"raw": "https://pokemon-type-api-cess.herokuapp.com/pokemon-types/",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-cess",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -106,7 +136,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "b0ddafa9-d460-4996-8f8f-89d87fcfc626",
 						"exec": [
 							"pm.test(\"all pokemon types\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -122,24 +152,35 @@
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData[1].name).to.eq(\"Herbizarre\");",
 							"});"
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
 			"request": {
-				"url": "http://localhost:8080/pokemon-types/",
 				"method": "GET",
 				"header": [
 					{
 						"key": "Accept-Language",
-						"value": "fr",
-						"description": ""
+						"value": "fr"
 					}
 				],
-				"body": {},
-				"description": ""
+				"url": {
+					"raw": "https://pokemon-type-api-cess.herokuapp.com/pokemon-types/",
+					"protocol": "https",
+					"host": [
+						"pokemon-type-api-cess",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon-types",
+						""
+					]
+				}
 			},
 			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
