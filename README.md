@@ -4,6 +4,8 @@
 Ce projet est pour la gestion des objets de type "PokemonType"
 Il est déployé sur Heroku, accessible à ce lien : https://pokemon-type-api-cess.herokuapp.com.
 
+Il est aussi accessible localement au port **8080**.
+
 Avec les endpoints :
 - /pokemon-types/ => Pour récupérer tous les pokémons
 - /pokemon-types/{id} => Pour récupérer le pokémon avec l'identifiant id
