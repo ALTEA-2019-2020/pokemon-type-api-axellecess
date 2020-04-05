@@ -10,4 +10,4 @@ Avec les endpoints :
 - /pokemon-types/?types={typesPokemon} => Pour récupérers le pokémons de typesPokemon
 - /pokemon-types/?name={name} => Pour récupérer le pokémon avec le nom name
 
-Il y a une collection Postman pour tester les fonctionnalités disponibles danx le dossier src/test/resources.
+Il y a une collection Postman pour tester les fonctionnalités disponibles dans le dossier src/test/resources.
