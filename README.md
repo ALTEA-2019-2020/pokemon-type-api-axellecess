@@ -1,5 +1,5 @@
-# pokemon-type-api-axellecess
-pokemon-type-api-axellecess created by GitHub Classroom
+# Pokemon Type API
+## Par Cess Axelle - M2 MIAGE FA
 
 Ce projet est pour la gestion des objets de type "PokemonType"
 Il est déployé sur Heroku, accessible à ce lien : https://pokemon-type-api-cess.herokuapp.com.
