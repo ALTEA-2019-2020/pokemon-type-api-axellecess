@@ -2,7 +2,7 @@
 ### Par Cess Axelle - M2 MIAGE FA
 
 Ce projet est pour la gestion des objets de type "PokemonType"
-Il est déployé sur Heroku, accessible à ce lien : https://pokemon-type-api-cess.herokuapp.com.
+Il est déployé sur Heroku, accessible à ce lien : **https://pokemon-type-api-cess.herokuapp.com**.
 
 Il est aussi accessible localement au port **8080**.
 
